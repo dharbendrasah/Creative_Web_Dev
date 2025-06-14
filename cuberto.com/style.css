@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "matter-light";
+  src: url("./assets/fonts/matter-light.woff2");
+}
+
+@font-face {
+  font-family: "matter-regular";
+  src: url("./assets/fonts/matter-regular.woff2");
+}
+
+@font-face {
+  font-family: "roboto-flex-latin";
+  src: url("./assets/fonts/roboto-flex-latin.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding-inline: 3vw;
+  height: 10vh;
+}
+
+.nav .logo {
+  width: 84px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.nav-left p {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "matter-light";
+}
+
+.nav-left button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 1px;
+}
+
+.homemain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 80%;
+  height: 76vh;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.homemain p {
+  font-family: "matter-light";
+  font-weight: 600;
+}
+
+.homemain p::first-letter {
+  text-transform: capitalize;
+}
+
+.homemain .headings {
+  display: flex;
+  gap: 2rem;
+  
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8vw;
+  text-transform: capitalize;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  line-height: 5vw;
+}
+
+.homemain .headings h1 {
+  transition: color .5s ease-in-out;
+}
+
+.homemain .headings h1:hover {
+  color: #000;
+}
+
+.homelast {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.homelast p {
+  width: 48%;
+  font-family: "matter-regular";
+  font-size: 1.4vw;
+  line-height: 1.7vw;
+  font-weight: 400;
+}
+
+/* ____________________ featured styling ____________________ */
+.featured-headings {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+.featured-headings h1:first-child {
+  font-family: "matter-light";
+  font-size: 2.7vw;
+  letter-spacing: 2px;
+}
+
+.featured-headings h1:nth-child(2) {
+  font-family: "matter-regular";
+  font-size: 2.7vw;
+  color: transparent;
+  -webkit-text-stroke: 0.1px #000;
+  opacity: 0.6;
+}
+
+.featured-images {
+  display: flex;
+  justify-content: space-between;
+
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 2rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fimg-left {
+  width: 45%;
+  height: inherit;
+}
+
+.fimg-left .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  
+  height: 100%;
+}
+
+.fimg-left .text h4 {
+  font-family: "matter-light";
+  opacity: 0.9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.fimg-left .text h1 {
+  font-family: "matter-regular";
+  font-size: 2.7vw;
+  font-weight: 500;
+}
+
+.fimg-left .text p {
+  font-family: "matter-regular";
+  font-weight: 600;
+  font-size: 1vw;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.fimg-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 45%;
+  height: inherit;
+}
+
+.fimg-right .images {
+  width: 85%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.fimg-right .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-all-products button {
+  display: block;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+  font-size: 1.2vw;
+  border: 1.5px solid #ccc;
+  border-radius: 10rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dev-design {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dev-design .heading-para {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.dev-design .heading {
+  font-family: "matter-light";
+  font-weight: 600;
+  font-size: 2.8vw;
+  letter-spacing: 1px;
+  width: 40%;
+}
+
+.dev-design .para {
+  font-family: "matter-light";
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 3vw;
+  width: 50%;
+}
+
+.design-cards {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-card {
+  width: 30%;
+}
+
+.design-card .img-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.design-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.design-card .tag {
+  display: inline-block;
+  font-family: "matter-light";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #f7f5f5;
+  padding: 0.7rem 1.5rem;
+  margin-block: 1rem;
+  border-radius: 10rem;
+}
+
+.design-card .title {
+  font-family: "matter-light";
+  font-size: 1.5vw;
+}
+
+/* ____________________ new-inspiro page styling ____________________ */
+.new-inspiro {
+  min-height: 100vh;
+}
+
+.new-inspiro .heading {
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 5vw;
+}
+
+.new-inspiro h1 {
+  font-family: "matter-light";
+  font-weight: 600;
+  font-size: 2.8vw;
+  letter-spacing: 1px;
+  width: 20%;
+  /* transition: cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+.inspiro-cards {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inspiro-card {
+  width: 30%;
+}
+
+.inspiro-card .img-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.inspiro-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiro-card .tag {
+  display: inline-block;
+  font-family: "matter-light";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #f7f5f5;
+  padding: 0.7rem 1.5rem;
+  margin-block: 1rem;
+  border-radius: 10rem;
+}
+
+.inspiro-card .title {
+  font-family: "matter-light";
+  font-size: 1.1vw;
+  text-align: justify;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
